@@ -7,12 +7,13 @@
 
 import requests
 from pprint import pprint
+from personal import get_OWM_key
 
 class DailyForecast:
     # input: city name as a string.
     def __init__(self, city):
         self.city = city
-        self.API_key = 'd8fe3c768df84c5386e2468462ddafbd'
+        self.API_key = get_OWM_key()
         self.forecast = requests.get('http://api.openweathermap.org/data/2.5/forecast/daily?q={}&appid={}'.format(city, self.API_key))
         self.forecast = self.forecast.json()
 
