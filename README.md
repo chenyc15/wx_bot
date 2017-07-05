@@ -12,7 +12,7 @@ This bot automatically send daily weather forecast to certain users in the morni
 
 ## Usage
 Modify the **personal_template.py** (see details in the file) and run the following in terminal/cmd:
-Run Auto Reply using XiaoI([See XiaoI](http://cloud.xiaoi.com/))
+Run Auto Reply using XiaoI(See [XiaoI](http://www.xiaoi.com/))
 ```
 python main.py autoreply
 ```
